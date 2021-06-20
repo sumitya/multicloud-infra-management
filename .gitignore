@@ -1,0 +1,10 @@
+build/
+.gradle
+gradle/
+.idea
+data/
+src/main/resources/UI-design.txt
+src/main/resources/daily_milestones.txt
+src/main/resources/project-roadmap.txt
+src/main/resources/SampleLambda.py
+src/main/resources/database-design.txt

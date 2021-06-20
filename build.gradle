@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'junit:junit:4.13.1'
+    implementation 'org.jetbrains:annotations:20.1.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testImplementation "cloud.localstack:localstack-utils:0.2.11"
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation group: 'log4j', name: 'log4j', version: '1.2.16'
+    implementation group: 'com.amazonaws', name: 'aws-java-sdk', version: '1.11.1026'
+    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.34.0'
+
+
+
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
